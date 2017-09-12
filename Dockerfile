@@ -1,6 +1,6 @@
 FROM nimbix/ubuntu-desktop:trusty
 
-RUN apt-get update && apt-get -y install filezilla && apt-get clean
+RUN apt-get update && apt-get -y install curl filezilla && apt-get clean
 
 COPY filezilla-launch.sh /usr/local/bin/filezilla-launch.sh
 

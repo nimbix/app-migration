@@ -26,8 +26,8 @@ cat <<EOF >~/.filezilla/sitemanager.xml
             <BypassProxy>0</BypassProxy>
             <Name>drop</Name>
             <Comments></Comments>
-            <LocalDir></LocalDir>
-            <RemoteDir></RemoteDir>
+            <LocalDir>/data</LocalDir>
+            <RemoteDir>/data</RemoteDir>
             <SyncBrowsing>0</SyncBrowsing>drop
         </Server>
     </Servers>
