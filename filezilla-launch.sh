@@ -8,13 +8,14 @@ APIKEY="$2"
 # generate devilspie rules for maximizing FileZilla
 mkdir -p ~/.devilspie
 cat <<EOF >~/.devilspie/maximize.ds
-(if (is (application_name) "FileZilla")
+(if (contains (window_name) "FileZilla")
  (begin
   (maximize)(focus)
  )
 )
 EOF
 devilspie &
+sleep 1
 
 # generate XML for site manager
 mkdir -p ~/.filezilla
