@@ -1,6 +1,6 @@
 {
     "name": "Vault Migration Assistant",
-    "description": "Tool to help transfer files between drop.jarvice.com and another vault.",
+    "description": "Tool to help transfer files between vaults.nimbix.net and another vault",
     "author": "Nimbix, Inc.",
     "licensed": true,
     "classifications": [
@@ -20,7 +20,7 @@
             "path": "/usr/local/bin/nimbix_desktop",
             "interactive": true,
             "name": "FileZilla",
-            "description": "Run FileZilla to transfer files to/from drop.jarvice.com and your selected vault in /data.",
+            "description": "Run FileZilla to transfer files to/from vaults.nimbix.net and your selected vault in /data",
             "parameters": {
                 "command": {
                     "name": "Command",

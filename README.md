@@ -1,2 +1,2 @@
 # app-migration
-JARVICE vault migration assistant
+JARVICE Vault Migration Assistant

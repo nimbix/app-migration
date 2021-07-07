@@ -1,6 +1,9 @@
 #!/bin/bash
 
-sudo service ssh start
+# start SSHd
+if [[ -x /usr/sbin/sshd ]]; then
+  sudo /usr/sbin/sshd-keygen && sudo /usr/sbin/sshd
+fi
 
 USERNAME="$1"
 APIKEY="$2"
@@ -12,8 +15,8 @@ cat <<EOF >~/.filezilla/sitemanager.xml
 <FileZilla3>
     <Servers>
         <Server>
-            <Host>drop.jarvice.com</Host>
-            <Port>22</Port>
+            <Host>vaults.nimbix.net</Host>
+            <Port>2222</Port>
             <Protocol>1</Protocol>
             <Type>0</Type>
             <User>$USERNAME</User>
@@ -34,4 +37,3 @@ cat <<EOF >~/.filezilla/sitemanager.xml
 </FileZilla3>
 EOF
 exec /usr/bin/filezilla --site=0/drop
-
