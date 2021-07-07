@@ -18,4 +18,4 @@ RUN apt-get -y update && \
 COPY filezilla-launch.sh /usr/local/bin/filezilla-launch.sh
 
 COPY NAE/AppDef.json /etc/NAE/AppDef.json
-RUN curl --fail -X POST -d @/etc/NAE/AppDef.json https://api.jarvice.com/jarvice/validate
+RUN curl --fail -X POST -d @/etc/NAE/AppDef.json https://cloud.nimbix.net/api/jarvice/validate
