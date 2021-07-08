@@ -27,7 +27,7 @@ cat <<EOF >~/.filezilla/sitemanager.xml
             <MaximumMultipleConnections>0</MaximumMultipleConnections>
             <EncodingType>Auto</EncodingType>
             <BypassProxy>0</BypassProxy>
-            <Name>drop</Name>
+            <Name>vaults</Name>
             <Comments></Comments>
             <LocalDir>/data</LocalDir>
             <RemoteDir>/data</RemoteDir>
