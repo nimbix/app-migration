@@ -1,9 +1,7 @@
 #!/bin/bash
 
 # start SSHd
-if [[ -x /usr/sbin/sshd ]]; then
-  sudo /usr/sbin/sshd-keygen && sudo /usr/sbin/sshd
-fi
+/usr/local/JARVICE/tools/bin/sshd_start
 
 USERNAME="$1"
 APIKEY="$2"
@@ -36,4 +34,4 @@ cat <<EOF >~/.filezilla/sitemanager.xml
     </Servers>
 </FileZilla3>
 EOF
-exec /usr/bin/filezilla --site=0/drop
+exec /usr/bin/filezilla --site=0/vaults
